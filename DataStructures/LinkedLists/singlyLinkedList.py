@@ -4,12 +4,13 @@ class Node:
     def __init__(self, data = None, next = None):
         self.data = data
         self.next = next
-        
+#Creating the Linked List class        
 class LinkedList:
-    
+    #initializing head
     def __init__(self):
         self.head = None
         
+    #function for finding the length    
     def listLength(self):
         current = self.head
         length = 0
@@ -18,6 +19,7 @@ class LinkedList:
             current = current.next
         return length 
 
+    #function for inserting at the beginning
     def insertAtBeginning(self, newNode):
         if self.head == None:
             self.head = newNode
@@ -25,7 +27,7 @@ class LinkedList:
             pastHead = self.head
             self.head = newNode
             newNode.next = pastHead
-            
+    #function for inserting at the end        
     def insertAtEnd(self, newNode):
         if self.head == None:
             self.head = newNode
@@ -37,6 +39,7 @@ class LinkedList:
 
             previous.next = newNode
 
+    #function for inserting at given position
     def insertAt(self, newNode, position):
         if self.listLength() < position:
             print("Position not found")
@@ -53,7 +56,7 @@ class LinkedList:
                         current = current.next
                     newNode.next = current.next
                     current.next = newNode
-
+    #function for printing the list items
     def printList(self):
         if self.head == None:
             print("Linked list is empty")
@@ -63,7 +66,8 @@ class LinkedList:
             while current:
                 print(current.data)
                 current = current.next
-#Creating the list
+
+#Manually creating the list
 
 firstNode = Node('Batman')
 linkedlist = LinkedList()
