@@ -1,6 +1,6 @@
 #Learning the OS module
 import os
-'''
+
 #To get the list of all accessible functions of the modules 
 print(dir(os))
 
@@ -46,7 +46,7 @@ print(os.environ.get('HOMEPATH'))
 #We can join two paths using the os.path.join
 #that way we don't require to keep guess the slashes
 print(os.path.join(os.environ.get('HOMEPATH'),'f.txt'))
-#We can use it to create a file or something like that'''
+#We can use it to create a file or something like that
 
 #To get the base element of a path
 print(os.path.basename(r'C:\Users\prash\X.txt'))
