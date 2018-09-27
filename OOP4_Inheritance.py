@@ -1,4 +1,4 @@
-'''#Inheritance
+#Inheritance
 
 class Employees:
     raiseValue = 1.04
@@ -37,7 +37,7 @@ dev1.apply_raise()
 print(dev1.pay)
 
 print(help(dev1))
-'''
+
 #We can use the super class's constructor for reusability
 #Consider a scenario where we wan an additional argument
 
